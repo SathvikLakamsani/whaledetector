@@ -49,6 +49,9 @@ class Settings(BaseSettings):
     ws_ping_interval_seconds: float = 10.0
     ws_reconnect_max_seconds: float = 120.0
     ws_trades_batch_size: int = 80
+    trades_poll_interval_seconds: float = 2.0
+    trades_poll_limit: int = 500
+    max_polled_trade_age_seconds: int = 3600
 
     http_timeout_seconds: float = 30.0
     data_api_base_url: str = "https://data-api.polymarket.com"
