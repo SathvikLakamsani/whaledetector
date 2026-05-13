@@ -30,9 +30,9 @@ def test_success_component_respects_win_rate() -> None:
 
 
 def test_assign_severity_bands() -> None:
-    s = Settings(severity_very_large_min_score=0.55, severity_extreme_min_score=0.75)
+    s = Settings(severity_very_large_min_score=0.62, severity_extreme_min_score=0.82)
     assert assign_severity(0.40, s) == "Large Executed Trade"
-    assert assign_severity(0.60, s) == "Very Large Executed Trade"
+    assert assign_severity(0.65, s) == "Very Large Executed Trade"
     assert assign_severity(0.90, s) == "Extreme Whale Trade"
 
 
