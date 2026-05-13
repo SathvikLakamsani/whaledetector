@@ -91,7 +91,7 @@ Main runtime values are in `.env`.
 Important keys:
 
 - `DISCORD_WEBHOOK_URL`
-- `MIN_WHALE_USD` (default 5000)
+- `MIN_WHALE_USD` (default 15000)
 - `MERGE_WINDOW_SECONDS` (default 45)
 - `MARKET_MIN_AGE_HOURS`
 - `MARKET_MIN_LIQUIDITY_USD`
@@ -156,3 +156,12 @@ If you see no Discord alerts:
 - WebSocket fills may not always map 1:1 to `/trades`; the poller fallback improves reliability.
 - Market sync is capped by page limit settings to avoid startup stalls.
 - This bot is designed for personal use and easy extension (Telegram/dashboard can be added later).
+
+## Ownership, IP, and Submission Notes
+
+- This repository is intended to contain only code the owner has rights to submit and assign.
+- Do not add employer/internal/proprietary code to this project.
+- Do not commit secrets (`.env` is ignored; only `.env.example` is tracked).
+- Dependency usage is documented in `THIRD_PARTY_NOTICES.md`.
+- License terms are in `LICENSE`.
+- A submission checklist is provided in `REPO_SUBMISSION_CHECKLIST.md`.
